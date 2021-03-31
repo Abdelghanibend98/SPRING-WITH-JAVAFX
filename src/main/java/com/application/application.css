@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#clickme{
+    -fx-background-color: blueviolet;
+    -fx-font-size: 30px;
+    -fx-border-radius: 50%;
+    -fx-alignment: top-center ;
+}

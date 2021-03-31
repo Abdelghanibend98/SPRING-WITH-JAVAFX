@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="650.0" prefWidth="559.37008" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controllers.PerviewController">
+   <children>
+      <BorderPane prefHeight="650.0" prefWidth="559.37008">
+         <center>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="650" prefWidth="559.37008" BorderPane.alignment="CENTER">
+               <content>
+                  <ImageView fx:id="imageView" fitHeight="793.70079" fitWidth="559.37008" pickOnBounds="true" preserveRatio="true" />
+               </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <HBox prefHeight="30.0" prefWidth="511.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="30.0" prefWidth="580.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Fichier">
+                        <items>
+                          <MenuItem fx:id="btnPrint" mnemonicParsing="false" onAction="#Print" text="Imprimer" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
